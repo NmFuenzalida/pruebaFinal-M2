@@ -21,6 +21,11 @@ $(document).ready(function(){
         $("#destacados").click(function () {
             $(".cuerpo").toggle(500);
         });  
+
+        //agregar un alert cuando aprete en enviar del formulario
+        $(".boton-envíar.py-2").click(function(){
+            alert("El correo ha sido enviado correctamente");
+        });
     
     //fin principal
     });   
