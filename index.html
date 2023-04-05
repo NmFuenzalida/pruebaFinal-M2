@@ -1,112 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/png" href="assets/img/viajes.svg"> <!--favicon-->
-	<meta name="author" content="Nicolas Morales Fuenzalida">
+    <meta name="author" content="Nicolas Morales Fuenzalida">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--fuente de google y abajo fontawesomes-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!--funcionando con nootstrap 5.1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Viajes Chile</title>
 </head>
+
 <body>
-    
+
     <!--header-->
     <header class="header container-fluid px-0 pb-5">
         <!--tuve que colocar el nav dentro del header porque no calzaba con el color de la imagen, intenté con todas mis herramientas-->
-    <nav class="navbar navbar-light bg-transparent fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white ps-5" href="#formulex">
-                <img src="assets/img/viajes.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Viajes Chile
-            </a>
-            <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
-                <div class="container-fluid">
+        <nav class="navbar navbar-light bg-transparent fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white ps-5" href="#formulex">
+                    <img src="assets/img/viajes.svg" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Viajes Chile
+                </a>
+                <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
+                    <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-white"  href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#quienes-somos">Quienes Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#destacados">Destacados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#formulex">Contacto</a>
-                            </li>
-                        </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#quienes-somos">Quienes Somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#destacados">Destacados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#formulex">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </nav>
+        </nav>
+        <!--Despues del navbar aplique el carrousel con las imagenes destacadas-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
                 </div>
-            </nav>
-    </nav>
-    <!--Despues del navbar aplique el carrousel con las imagenes destacadas-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
 
     </header>
     <!--ahora viene el contenido-->
-    <main class="container-fluid d-flex  flex-column align-items-center py-3"> <!--aplicque esa clase de dflex para que el contenido del container se centrara responsivamente-->
-        <!--Container que contendrá las cartas- con las descripciones--->
+    <main class="container-fluid d-flex  flex-column align-items-center py-3">
+        <!--aplicque esa clase de dflex para que el contenido del container se centrara de manera responsiva->
+        <!--Container que contendrá los iconos - con las descripciones, decidí utilizar cartas--->
         <section class="ocultar container row ">
             <div id="quienes-somos">
-            <h3 class="text-white text-center pb-5">Quiénes Somos</h3>
+                <h3 class="text-white text-center pb-5">Quiénes Somos</h3>
             </div>
-            <!--Primera carta-->
+            <!--1er icono y contenido correspondiente-->
             <div class="col card mx-1 p-0 bg-transparent " style="width: 18rem;">
                 <div class="iconos d-flex justify-content-center p-2">
                     <a href="">
-                <img src="assets/img/plane-solid (1).svg" class="avion" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Vuelos" width="30px" alt="">    
-                </a>
+                        <img src="assets/img/plane-solid (1).svg" class="avion" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Vuelos" width="30px" alt="">
+                    </a>
                 </div>
                 <div class="card-body">
-                <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur vero optio, reprehenderit eaque nostrum ipsa laudantium quidem pariatur atque facilis voluptate dignissimos, ipsum iusto eum molestiae expedita provident beatae minima.</p>
+                    <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consequatur vero optio, reprehenderit eaque nostrum ipsa laudantium quidem pariatur atque
+                        facilis voluptate dignissimos, ipsum iusto eum molestiae expedita provident beatae minima.</p>
                 </div>
             </div>
 
-            <!--segunda carta-->
+            <!--2do icono y contenido-->
             <div class="col card mx-1 p-0 bg-transparent" style="width: 18rem;">
                 <div class="card-body text-white ">
-                <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ad! Culpa voluptatibus odit quas nam. Mollitia quasi, corrupti expedita id a laboriosam repellat earum, velit iusto qui, suscipit vitae ipsa?</p>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ad! Culpa
+                        voluptatibus odit quas nam. Mollitia quasi, corrupti expedita id a laboriosam repellat earum,
+                        velit iusto qui, suscipit vitae ipsa?</p>
                 </div>
                 <div class="iconos d-flex justify-content-center p-2">
-                    <img src="assets/img/mountain-solid (1).svg" data-bs-toggle="tooltip" data-bs-placement="right" title="Senderismo"class="" width="30px" alt="">    
+                    <img src="assets/img/mountain-solid (1).svg" data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Senderismo" class="" width="30px" alt="">
                 </div>
             </div>
 
-            <!--3ra carta-->
+            <!--3r icono -->
             <div class="col card mx-1 p-0 bg-transparent" style="width: 18rem;">
                 <div class="iconos d-flex justify-content-center p-2">
-                <img src="assets/img/route-solid.svg" data-bs-toggle="tooltip" data-bs-placement="right" title="Guia turistico" class="icono" width="25px" alt="">    
+                    <img src="assets/img/route-solid.svg" data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Guia turistico" class="icono" width="25px" alt="">
                 </div>
                 <div class="card-body text-white">
-                <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quia aliquid amet incidunt? Enim ut eveniet quos quas eos ab doloremque laborum. Saepe et repudiandae, vel rem aperiam repellat a?</p>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quia
+                        aliquid amet incidunt? Enim ut eveniet quos quas eos ab doloremque laborum. Saepe et
+                        repudiandae, vel rem aperiam repellat a?</p>
                 </div>
             </div>
 
@@ -116,45 +134,49 @@
         <!--section con las 4 cartas con imagen en info asociada-->
         <section class="container row p-5 ">
             <div id="destacados">
-            <h3 class="text-white text-center pb-5">Destacados</h3>
+                <h3 class="text-white text-center pb-5">Destacados</h3>
             </div>
-        <!--Carta-->
-        <div class="card col mx-2 p-0 " style="width: 18rem;">
-            <div class="m-0">
-            <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+            <!--Carta-->
+            <div class="card col mx-2 p-0 " style="width: 18rem;">
+                <div class="m-0">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="cuerpo">
+                    <p class="card-text text-white">Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
             </div>
-            <div class="cuerpo">
-                <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
+            <!--Carta-->
+            <div class="card col mx-2 p-0" style="width: 18rem;">
+                <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                <div class="cuerpo">
+                    <p class="card-text text-white">Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
             </div>
-        </div>
-        <!--Carta-->
-        <div class="card col mx-2 p-0" style="width: 18rem;">
-            <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-            <div class="cuerpo">
-                <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
+            <!--Carta-->
+            <div class="card col mx-2 p-0" style="width: 18rem;">
+                <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                <div class="cuerpo">
+                    <p class="card-text text-white ">Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
             </div>
-        </div>
-        <!--Carta-->
-        <div class="card col mx-2 p-0" style="width: 18rem;">
-            <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-            <div class="cuerpo">
-                <p class="card-text text-white ">Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
+            <!--Carta-->
+            <div class="card col mx-2 p-0" style="width: 18rem;">
+                <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                <div class="cuerpo">
+                    <p class="card-text text-white">Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                </div>
             </div>
-        </div>
-        <!--Carta-->
-        <div class="card col mx-2 p-0" style="width: 18rem;">
-            <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-            <div class="cuerpo">
-                <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
-            </div>
-        </div>
         </section>
-    <!--siguiente seccion con el formulario-->
-        <section class="container py-5" >
+        <!--siguiente seccion con el formulario-->
+        <section class="container py-5">
             <form>
                 <div id="formulex">
                     <label for="exampleInputEmail1" class="form-label text-white">Nombre</label>
@@ -169,37 +191,47 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div class="boton-envíar py-2"> <!--Aplicación tooltip a boton-->
-                <button type="submit" class="btn btn-primary py-2 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Listo para envíar!">Envíar</button>
+                    <button type="submit" class="btn btn-primary py-2 data-bs-toggle=" tooltip"
+                        data-bs-placement="bottom" title="Listo para envíar!">Envíar</button>
                 </div>
-                </form>
+            </form>
         </section>
     </main>
 
     <!--footer-->
-    <footer >
-    <div class="container py-3">
-    <div class="row px-5">
-        <div class="col-md-6">
-            <h3 class="viajecito">VIAJES CHILE</h3>
+    <footer>
+        <div class="container py-3">
+            <div class="row px-5">
+                <div class="col-md-6">
+                    <h3 class="viajecito">VIAJES CHILE</h3>
+                </div>
+                <div class="col-md-6 text-end ">
+                    <a href="https://es-la.facebook.com/"><img src="assets/img/facebook (1).svg" width="30px" alt=""
+                            class="mx-1"></a>
+                    <a href="https://www.linkedin.com/"><img src="assets/img/linkedin.svg" width="30px" alt=""
+                            class="mx-1"></a>
+                    <a href="https://github.com/NmFuenzalida"> <img src="assets/img/github (1).svg" width="30px" alt=""
+                            class="mx-1"></a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 text-end ">
-            <a href="https://es-la.facebook.com/"><img src="assets/img/facebook (1).svg" width="30px" alt="" class="mx-1"></a>
-            <a href="https://www.linkedin.com/"><img src="assets/img/linkedin.svg" width="30px" alt=""class="mx-1"></a>
-            <a href="https://github.com/NmFuenzalida"> <img src="assets/img/github (1).svg" width="30px" alt="" class="mx-1"></a>
-        </div>
-    </div>
-    </div>
     </footer>
-    
-    
+
+
+    <!--CDN bootstrap, y query quer usé-->
+
     <!--popper bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <!--cdn de jquery-->
-        <script src="ruta/hacia/jquery.smooth-scroll.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--cdn de jquery 3.6-->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!--etiqueta principal cdn-->
-    <script src="assets/js/script.js"></script> <!--link del script en otro archivo, FUNCIONÓ CON EL SCRIPT AL FINAL-->
-    
-    
-    </body>
+    <!--link del javascript en otro archivo, FUNCIONÓ con el link SCRIPT AL FINAL-->
+    <script src="assets/js/script.js"></script> 
+
+
+</body>
+
 </html>
