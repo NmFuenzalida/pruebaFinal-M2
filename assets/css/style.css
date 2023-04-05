@@ -1,0 +1,34 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: black; 
+    font-family: sans-serif;
+    }
+.navbar-brand.text-white.ps-5,
+.nav-link.text-white,
+p,
+h3{
+  font-family: 'Quicksand', sans-serif;
+}
+.iconos{
+  
+  background-color: rgb(6, 210, 241);
+  color:white;
+}
+.card.col{
+  background-color: rgb(6, 210, 241);
+}
+.btn.btn-primary.py-2{
+  background-color: rgb(6, 210, 241);
+}
+.mi-footer{
+background-color:rgb(6, 210, 241) ;
+}
+.ultimos{
+  color: aliceblue;
+}
+footer{
+  background-color:rgb(6, 210, 241);
+}
+.mi-tooltip .tooltip-inner {
+  background-color: red;
+}
