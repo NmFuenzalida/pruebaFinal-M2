@@ -7,10 +7,7 @@ $(document).ready(function(){
             $('.ocultar').show();
         }
     });
-//tooltip sobre los iconos en la sección de Quienes somos
-    $('[data-toggle="tooltip"]').tooltip(
-    
-    );
+
 //   dobleclick y cambio a color rojo en viajes chile
     $(".viajecito").dblclick(function(){  
         $(this).css({
